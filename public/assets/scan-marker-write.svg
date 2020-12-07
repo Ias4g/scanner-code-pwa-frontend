@@ -1,0 +1,25 @@
+<svg width="46" height="46" xmlns="http://www.w3.org/2000/svg">
+ <title/>
+
+ <g>
+  <title>background</title>
+  <rect fill="none" id="canvas_background" height="402" width="582" y="-1" x="-1"/>
+ </g>
+ <g>
+  <title>Layer 1</title>
+  <path fill="#ffffff" fill-opacity="0.5" id="svg_1" d="m15,38l0,2l-6,0a3,3 0 0 1 -3,-3l0,-6l2,0l0,6a1,1 0 0 0 1,1l6,0z"/>
+  <path fill="#ffffff" fill-opacity="0.5" id="svg_2" d="m40,31l0,6a3,3 0 0 1 -3,3l-6,0l0,-2l6,0a1,1 0 0 0 1,-1l0,-6l2,0z"/>
+  <path fill="#ffffff" fill-opacity="0.5" id="svg_3" d="m40,9l0,6l-2,0l0,-6a1,1 0 0 0 -1,-1l-6,0l0,-2l6,0a3,3 0 0 1 3,3z"/>
+  <path fill="#ffffff" fill-opacity="0.5" id="svg_4" d="m15,6l0,2l-6,0a1,1 0 0 0 -1,1l0,6l-2,0l0,-6a3,3 0 0 1 3,-3l6,0z"/>
+  <rect fill="#ffffff" fill-opacity="0.5" id="svg_5" y="11" x="10" width="3" height="19"/>
+  <rect fill="#ffffff" fill-opacity="0.5" id="svg_6" y="32" x="10" width="3" height="3"/>
+  <rect fill="#ffffff" fill-opacity="0.5" id="svg_7" y="11" x="14" width="1" height="24"/>
+  <rect fill="#ffffff" fill-opacity="0.5" id="svg_8" y="11" x="16" width="3" height="24"/>
+  <rect fill="#ffffff" fill-opacity="0.5" id="svg_9" y="11" x="20" width="1" height="24"/>
+  <rect fill="#ffffff" fill-opacity="0.5" id="svg_10" y="11" x="22" width="3" height="24"/>
+  <rect fill="#ffffff" fill-opacity="0.5" id="svg_11" y="11" x="26" width="1" height="24"/>
+  <rect fill="#ffffff" fill-opacity="0.5" id="svg_12" y="11" x="28" width="3" height="24"/>
+  <rect fill="#ffffff" fill-opacity="0.5" id="svg_13" y="11" x="32" width="1" height="24"/>
+  <rect fill="#ffffff" fill-opacity="0.5" id="svg_14" y="11" x="34" width="2" height="24"/>
+ </g>
+</svg>
