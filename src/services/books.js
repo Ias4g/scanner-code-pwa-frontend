@@ -63,6 +63,6 @@ export const calculateScore = score => {
 }
 
 export const getBook = async isbn => {
-  const res = await api.get(`/show-book/${isbn}`)
+  const res = await api.get(`show-book/${isbn}`)
   return res.data
 }
