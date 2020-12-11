@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom'
 import { getBook } from '../../services/books'
 import Extras from './Extras'
+import Footer from './Footer'
 import GeneralScore from './GeneralScore'
 import Info from './Info'
 import Scores from './Scores'
@@ -29,6 +30,7 @@ function BookDetails() {
             <GeneralScore book={book} />
             <Scores book={book} />
             <Extras book={book} />
+            <Footer />
           </Container>
         )
       }

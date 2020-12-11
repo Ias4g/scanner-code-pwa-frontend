@@ -16,4 +16,3 @@ function Main() {
 }
 
 export default Main;
- build

@@ -1,23 +1,32 @@
 import styled from 'styled-components'
 
 export const Container = styled.div`
+  max-width: 480px;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   flex-wrap: wrap;
+  margin: 20px auto;
 `;
 
 export const Score = styled.div`
   flex: 1;
   display: flex;
   align-items: center;
-  margin-top: 20px;
-  margin-right: 10px;
+  padding: 10px;
 
   .label {
     color: ${props => props.scoreColor};
     font-size: 22px;
     text-align: center;
+  }
+
+  @media (max-width: 720px) {
+    .label {
+      color: ${props => props.scoreColor};
+      font-size: 17px;
+      text-align: center;
+    }
   }
 `;
 
