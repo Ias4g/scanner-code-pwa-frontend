@@ -6,7 +6,7 @@ const Footer = () => {
   return (
     <>
       <Container>
-        <img src="../../../assets/logo.svg" />
+        <img src="../../../assets/logo-black.svg" />
         <div className="redes">
           <a className="sociais" href="https://www.instagram.com/oficial_emunah/" target="_blank" title="Ir para o instagram">
             <FaInstagramSquare size="22" color="#2ECC71" />

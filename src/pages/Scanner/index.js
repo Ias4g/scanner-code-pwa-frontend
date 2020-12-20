@@ -82,7 +82,7 @@ function Scanner({ onScann }) {
 
         <img
           className="logo"
-          src="../../../assets/logo.svg"
+          src="../../../assets/logo-write.svg"
           alt="Logo do site"
           width="128"
           height="64"
