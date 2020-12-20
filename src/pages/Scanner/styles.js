@@ -31,7 +31,7 @@ export const Container = styled.div`
 
   .logo {
     /* margin-bottom: 5px; */
-    opacity: 0.25;
+    opacity: 0.5;
   }
 
   .version {
