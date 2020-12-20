@@ -39,7 +39,7 @@ function Results({ isbn }) {
             <Info>
               <div className="name-author">
                 <h1 className="name">{book.name}</h1>
-                <h2 className="author">--{' '}{book.author}</h2>
+                <h2 className="author">by{' '}{book.author}</h2>
               </div>
               <div className="book-ratings">
                 <StarRatings

@@ -1,7 +1,6 @@
 import styled from 'styled-components'
 
 export const Container = styled.div`
-  padding: 20px;
   position: fixed;
   right: 150px;
   bottom: 20px;
@@ -17,8 +16,7 @@ export const Container = styled.div`
     padding: 15px;
   }
 
-  @media (min-width: 320px) and (max-width: 480px) {
-    display: flex;
+  @media (max-width: 720px) {
     align-items: center;
     top: 100px;
     right: 30px;
@@ -32,34 +30,39 @@ export const Container = styled.div`
 `;
 
 export const Wrapper = styled.div`
-    display: flex;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+
+  @media (max-width: 720px) {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: transparent;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 10px;
-
-    @media (min-width: 320px) and (max-width: 480px) {
-      background-color: #ff0400;
-      height: 100%;
-      flex-direction: column;
-      align-items: center;
-      padding: 2px;
-    }
+    padding: 20px;
+    border-radius: 12px;
+  }
 `;
 
 export const Cover = styled.img`
+  height: 128px;
+  width: 96px;
+  margin-right: 15px;
+  border-radius: 5px;
+  border: 1px solid #7f8c8d;
+
+  @media (max-width: 720px) {
     height: 128px;
     width: 96px;
-    margin-right: 15px;
-    border-radius: 5px;
-    border: 1px solid #7f8c8d;
-
-    @media (min-width: 320px) and (max-width: 480px) {
-      height: 128px;
-      width: 96px;
-      margin-top: 20px;
-      margin-right: 0px;
-      margin-bottom: 20px;
-    }
+    margin-right: 0px;
+    margin-bottom: 20px;
+  }
 `;
 
 export const Info = styled.div`
@@ -88,12 +91,13 @@ export const Info = styled.div`
   }
 
   .discount {
-      /* color: #7f8c8d; */
-      color: #FF0000;
-      text-decoration: line-through;
+    color: #FF0000;
+    text-decoration: line-through;
   }
 
-  @media (min-width: 320px) and (max-width: 480px) {
+  @media (max-width: 720px) {
+    justify-content: flex-start;
+
     .name-author {
       .name {
         color: #7f8c8d;
@@ -114,16 +118,16 @@ export const Info = styled.div`
     }
 
     .book-ratings {
-        color: #7f8c8d;
-        font-size: 12px;
-        text-align: center;
-        margin-bottom: 5px;
+      color: #7f8c8d;
+      font-size: 12px;
+      text-align: center;
+      margin-bottom: 5px;
     }
 
     .price {
-        color: #7f8c8d;
-        font-size: 12px;
-        text-align: center;
+      color: #7f8c8d;
+      font-size: 12px;
+      text-align: center;
     }
   }
 `;
@@ -140,17 +144,17 @@ export const ActionButton = styled.div`
     line-height: 0;
   }
 
-  @media (min-width: 320px) and (max-width: 480px) {
-    display: fixed;
-    bottom: 0;
-    margin-left: 0;
-    padding: 2px;
+  @media (max-width: 720px) {
+    display: flex;
+    bottom: 20px;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
 
     .button {
-      display: block;
       background-color: #2ecc71;
-      border-radius: 4px;
-      padding: 2px;
+      border-radius: 50px;
+      padding: 8px 100px;
       line-height: 0;
     }
   }

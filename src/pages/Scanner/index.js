@@ -89,7 +89,7 @@ function Scanner({ onScann }) {
         />
 
         <span className="version">
-          version: 1.1.2 de 11/12/2020
+          version: 1.1.5 de 20/12/2020
         </span>
       </Container>
     </>
