@@ -76,6 +76,7 @@ export const Info = styled.div`
     .name {
       color: #7f8c8d;
       font-size: 18px;
+      text-align: center;
       margin-bottom: 2px;
       margin-top: 0;
     }

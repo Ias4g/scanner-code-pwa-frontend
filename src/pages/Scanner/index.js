@@ -1,9 +1,11 @@
-import React, { useEffect } from 'react';
-import PropsTypes from 'prop-types'
+import PropsTypes from 'prop-types';
 import Quagga from 'quagga';
+import React, { useEffect } from 'react';
+import { FaRegEdit } from 'react-icons/fa';
+import { Link } from 'react-router-dom';
+import { validateIsbn } from '../../services/books';
+import { Container, ScanMarker, Video } from './styles';
 
-import { validateIsbn } from '../../services/books'
-import { Video, Container, ScanMarker } from './styles';
 
 function Scanner({ onScann }) {
   let scanAttemps = 0
@@ -15,7 +17,6 @@ function Scanner({ onScann }) {
 
     if (validateIsbn(isbn)) {
       onScann(isbn)
-      // alert(`Código ISBN válido ${isbn}`)
       return
     } else {
       if (!validateIsbn(isbn)) {
@@ -72,25 +73,30 @@ function Scanner({ onScann }) {
       <Video id="video" />
       <Container>
         <ScanMarker>
-          <img src="../../../assets/scan-marker-write.svg"
+          <Link className="digitcod" to="/">
+            <FaRegEdit size="26" color="#2ecc71" />
+          </Link>
+
+          <img src="../../../assets/marker.svg"
             alt="Marca para leitura do codigo"
-            width="350"
-            height="250"
+            width="256"
+            height="256"
           />
+
           <p className="label">Centralize o código no centro da marca acima, para realizar a leitura.</p>
+
+          <img
+            className="logo"
+            src="../../../assets/logo-write.svg"
+            alt="Logo do site"
+            width="128"
+            height="64"
+          />
+
+          <span className="version">
+            version: 1.3.5 de 21/12/2020
+          </span>
         </ScanMarker>
-
-        <img
-          className="logo"
-          src="../../../assets/logo-write.svg"
-          alt="Logo do site"
-          width="128"
-          height="64"
-        />
-
-        <span className="version">
-          version: 1.2.5 de 20/12/2020
-        </span>
       </Container>
     </>
   );
