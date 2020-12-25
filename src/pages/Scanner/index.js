@@ -1,7 +1,7 @@
 import PropsTypes from 'prop-types';
 import Quagga from 'quagga';
 import React, { useEffect } from 'react';
-import { FaRegEdit } from 'react-icons/fa';
+import { FaKeyboard } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 import { validateIsbn } from '../../services/books';
 import { Container, ScanMarker, Video } from './styles';
@@ -73,9 +73,9 @@ function Scanner({ onScann }) {
       <Video id="video" />
       <Container>
         <ScanMarker>
-          <Link className="digitcod" to="/">
-            <FaRegEdit size="26" color="#2ecc71" />
-          </Link>
+          <button className="digitcod">
+            <FaKeyboard size="26" color="#fff" />
+          </button>
 
           <img src="../../../assets/marker.svg"
             alt="Marca para leitura do codigo"
@@ -94,7 +94,7 @@ function Scanner({ onScann }) {
           />
 
           <span className="version">
-            version: 1.3.5 de 21/12/2020
+            versão: 1.4.0 de 25/12/2020
           </span>
         </ScanMarker>
       </Container>
