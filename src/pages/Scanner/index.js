@@ -68,13 +68,17 @@ function Scanner({ onScann }) {
     }
   }, [])
 
+  function getCode() {
+    alert('Abrindo tela para digitar ISBN')
+  }
+
   return (
     <>
       <Video id="video" />
       <Container>
         <ScanMarker>
-          <button className="digitcod">
-            <FaKeyboard size="26" color="#fff" />
+          <button className="digitcod" onClick={getCode}>
+            <FaKeyboard size="18" />
           </button>
 
           <img src="../../../assets/marker.svg"

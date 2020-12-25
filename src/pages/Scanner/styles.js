@@ -42,19 +42,23 @@ export const ScanMarker = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: transparent;
-    width: 52px;
-    height: 52px;
-    border: 1px solid #fff;
+    background: #3DBA5C;
+    color: #fff;
+    width: 40px;
+    height: 40px;
+    border: 0;
     border-radius: 50%;
     position: absolute;
     top: 10px;
     right: 10px;
+    outline: none;
+    transition: background-color 400ms
   }
 
   .digitcod:hover {
-    background-color: #3DBA5C;
-    border: 0;
+    background: #fff;
+    color: #3DBA5C;
+    outline: none;
   }
 
   .label {
