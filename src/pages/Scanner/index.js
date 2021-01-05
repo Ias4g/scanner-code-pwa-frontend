@@ -2,10 +2,8 @@ import PropsTypes from 'prop-types';
 import Quagga from 'quagga';
 import React, { useEffect } from 'react';
 import { FaKeyboard } from 'react-icons/fa';
-import { Link } from 'react-router-dom';
 import { validateIsbn } from '../../services/books';
 import { Container, ScanMarker, Video } from './styles';
-
 
 function Scanner({ onScann }) {
   let scanAttemps = 0
